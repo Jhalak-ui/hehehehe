@@ -19,15 +19,13 @@ You are amazing.
 - Makes me smile
 - Makes my day better
 - Occupies my thoughts way too often
-- 10/10 human
 
 ---
 
 ## Requirements
 
-- Kindness ✅
-- Sense of humor ✅
-- Amazing personality ✅
+- bringing my freak back ✅
+- calling me sahiba and baby only ✅
 
 ---
 
@@ -39,7 +37,7 @@ You are amazing.
 
 ---
 
-# 💖 Will You Be My Girlfriend?
+# 💖 Will You Be My boyfriend?
 
 ## Response Options
 
