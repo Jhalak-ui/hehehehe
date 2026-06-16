@@ -1,72 +1,174 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>For You ❤️</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #ffe6f2;
-      margin: 0;
-      padding: 50px;
-    }
+<meta charset="UTF-8">
+<title>For You ❤️</title>
 
-    .slide {
-      display: none;
-      font-size: 32px;
-      margin-top: 100px;
-    }
+<style>
+body{
+    margin:0;
+    background:#fff8f8;
+    font-family:Georgia, serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
 
-    .active {
-      display: block;
-    }
+.slide{
+    display:none;
+    text-align:center;
+    max-width:800px;
+    padding:40px;
+    animation:fade 1s;
+}
 
-    button {
-      padding: 15px 30px;
-      font-size: 20px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      margin-top: 40px;
-    }
-  </style>
+.active{
+    display:block;
+}
+
+img{
+    max-width:500px;
+    max-height:400px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+h1{
+    font-size:3em;
+    color:#d94f70;
+}
+
+p{
+    font-size:1.4em;
+    line-height:1.8;
+    color:#444;
+}
+
+button{
+    margin-top:25px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+</style>
 </head>
+
 <body>
 
+<!-- Slide 1 -->
 <div class="slide active">
-  <h1>Hi ❤️</h1>
+    <h1>Hi ❤️</h1>
+    <p>I made something for you.</p>
+    <button onclick="nextSlide()">Next →</button>
 </div>
 
+<!-- Slide 2 -->
 <div class="slide">
-  <h1>I made this just for you 😊</h1>
+    <img src="photo1.jpg">
+    <p>One of my favorite photos of us.</p>
+    <button onclick="nextSlide()">Next →</button>
 </div>
 
+<!-- Slide 3 -->
 <div class="slide">
-  <h1>You make my days better ☀️</h1>
+    <img src="photo2.jpg">
+    <p>And another memory I love.</p>
+    <button onclick="nextSlide()">Next →</button>
 </div>
 
+<!-- Slide 4 -->
 <div class="slide">
-  <h1>You make me smile 😄</h1>
+    <p>
+    I know we're still figuring things out.
+    </p>
+
+    <p>
+    We have a long way to go.
+    </p>
+
+    <button onclick="nextSlide()">Next →</button>
 </div>
 
+<!-- Slide 5 -->
 <div class="slide">
-  <h1>So I have one question...</h1>
+    <p>
+    There will be things to learn,
+    moments to navigate,
+    and memories we haven't made yet.
+    </p>
+
+    <button onclick="nextSlide()">Next →</button>
 </div>
 
+<!-- Slide 6 -->
 <div class="slide">
-  <h1>Will You Be My Girlfriend? ❤️</h1>
+    <p>
+    But there's no one
+    I'd rather do all of that with.
+    </p>
+
+    <button onclick="nextSlide()">Next →</button>
 </div>
 
-<button onclick="nextSlide()">Next ➡️</button>
+<!-- Slide 7 -->
+<div class="slide">
+    <p>
+    I choose you.
+    </p>
+
+    <p>
+    And thank you for choosing me.
+    </p>
+
+    <button onclick="nextSlide()">Next →</button>
+</div>
+
+<!-- Slide 8 -->
+<div class="slide">
+    <p>
+    This is my way of asking you out.
+    </p>
+
+    <button onclick="nextSlide()">Next →</button>
+</div>
+
+<!-- Slide 9 -->
+<div class="slide">
+    <h1>Sooo...</h1>
+
+    <button onclick="nextSlide()">Next →</button>
+</div>
+
+<!-- Slide 10 -->
+<div class="slide">
+    <h1>Will you be my boyfriend? ❤️</h1>
+
+    <button onclick="alert('❤️ Best answer ever ❤️')">
+        Yes
+    </button>
+
+    <button onclick="alert('❤️ I was hoping for that ❤️')">
+        Absolutely Yes
+    </button>
+</div>
 
 <script>
 let current = 0;
 const slides = document.querySelectorAll(".slide");
 
-function nextSlide() {
-  slides[current].classList.remove("active");
-  current = (current + 1) % slides.length;
-  slides[current].classList.add("active");
+function nextSlide(){
+    slides[current].classList.remove("active");
+    current++;
+    slides[current].classList.add("active");
 }
 </script>
 
